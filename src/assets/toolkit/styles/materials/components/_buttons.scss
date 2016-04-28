@@ -1,0 +1,58 @@
+%button{
+	height: $ui-height;
+	padding: 10px 20px;
+	border: none;
+	text-align: center;
+	text-transform: uppercase;
+	background: transparent;
+	font-family: inherit;
+	outline: none;
+	font: inherit;
+	cursor: pointer;
+	display: inline-block;
+	&:hover{
+		text-decoration: none;
+		background: darken(map-get($color, fourth), 4%);
+	}
+}
+input[type="button"], 
+input[type="submit"],
+input[type="reset"]{
+	border-top: 1px solid map-get($color, second);
+	@extend %button;
+	&:disabled{
+		opacity: 0.5;
+		border-top: 1px solid map-get($color, second);
+		cursor: not-allowed;
+	}
+}
+
+button,
+button[type="reset"],
+button[type="submit"],
+button[type="button"]{
+	border-top: 1px solid map-get($color, second);
+	@extend %button;
+}
+button[disabled],
+button[disabled="disabled"]{
+	@extend %button;
+	border-top: 1px solid map-get($color, second);
+	cursor: not-allowed;
+	opacity: 0.5;
+}
+.second-button{
+	@extend %button;
+	border: 1px solid #000;
+	line-height: 1.5em;
+}
+.third-button{
+	@extend %button;
+	border: 1px solid #000;
+	line-height: 1.5em;
+	background: map-get($color, second);
+	color: map-get($color, fourth);
+	&:hover{
+		color: map-get($color, second);
+	}
+}

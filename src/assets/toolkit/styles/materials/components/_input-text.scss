@@ -1,0 +1,38 @@
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea{
+	height: $ui-height;
+	border: 1px solid map-get($color, third);
+	background: transparent;
+	line-height: normal;
+	width: 100%;
+	padding: 10px;
+	color: #898989;
+	outline: none;
+	font-family: inherit;
+	font-size: inherit;
+	&::placeholder{
+		text-transform: uppercase;
+		opacity: 1;
+		color: #898989;
+	}
+	&:focus{
+		border-color: darken(red, 10%);
+	}
+}
+h1{
+	color: map-get($color, first);
+	font-family: map-get($typo, second);
+}

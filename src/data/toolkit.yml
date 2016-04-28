@@ -1,8 +1,8 @@
 colors:
   primary:
+    Red: "rgb(237, 28, 36)"
     Dark: "rgb(30, 30, 30)"
-    Light: "rgb(242, 242, 242)"
+    Light: "rgb(245, 245, 245)"
   secondary:
-    Red: "rgb(201, 55, 6)"
-    Yellow: "rgb(252, 207, 80)"
-    Blue: "rgb(39, 102, 143)"
+    Gray: "rgb(215, 215, 215)"
+    Text Gray: "rgb(137, 137, 137)"
